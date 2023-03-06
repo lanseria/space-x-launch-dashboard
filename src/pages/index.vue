@@ -9,12 +9,21 @@
         <defs>
           <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="transparent" />
+            <stop offset="40%" stop-color="rgba(0, 0, 0, 0.1)" />
+            <stop offset="60%" stop-color="rgba(0, 0, 0, 0.1)" />
+            <stop offset="100%" stop-color="transparent" />
+          </linearGradient>
+        </defs>
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="transparent" />
             <stop offset="40%" stop-color="rgba(0, 0, 0, 0.2)" />
             <stop offset="60%" stop-color="rgba(0, 0, 0, 0.2)" />
             <stop offset="100%" stop-color="transparent" />
           </linearGradient>
         </defs>
-        <circle cx="960" cy="960" r="960" fill="url(#grad)" />
+        <circle cx="960" cy="960" r="960" fill="url(#grad)" stroke="rgba(255, 255, 255, 0.5)" stroke-width="3" />
+        <circle cx="960" cy="960" r="910" fill="url(#grad1)" stroke="rgba(255, 255, 255, 0.8)" stroke-width="2" />
       </svg>
     </div>
   </div>
