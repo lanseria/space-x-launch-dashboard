@@ -2,26 +2,20 @@
 </script>
 
 <template>
-  <div>
-    <a-typography :style="{ marginTop: '-40px' }">
-      <a-typography-title>
-        Arco Uno Basic Template
-      </a-typography-title>
-      <a-space>
-        <a-button type="primary">
-          Primary
-        </a-button>
-        <a-button>Secondary</a-button>
-        <a-button type="dashed">
-          Dashed
-        </a-button>
-        <a-button type="outline">
-          Outline
-        </a-button>
-        <a-button type="text">
-          Text
-        </a-button>
-      </a-space>
-    </a-typography>
+  <div class="w-full h-full relative overflow-hidden">
+    <div class="absolute h-1920px w-1920px bottom--1757px">
+      <div class="h-1920px w-1920px rounded-1/2 bg-gradient-to-r absolute from-transparent via-dark-500 to-transparent opacity-20 border-3px text-white" />
+      <svg width="1920" height="1920">
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="transparent" />
+            <stop offset="40%" stop-color="rgba(0, 0, 0, 0.2)" />
+            <stop offset="60%" stop-color="rgba(0, 0, 0, 0.2)" />
+            <stop offset="100%" stop-color="transparent" />
+          </linearGradient>
+        </defs>
+        <circle cx="960" cy="960" r="960" fill="url(#grad)" />
+      </svg>
+    </div>
   </div>
 </template>
